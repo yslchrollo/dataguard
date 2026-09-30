@@ -1,0 +1,11 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+# Runs migrations before traffic is switched to the new deployment
+releaseCommand = "php artisan migrate --force"
+startCommand = "php artisan serve --host=0.0.0.0 --port=$PORT"
+healthcheckPath = "/up"
+healthcheckTimeout = 30
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3

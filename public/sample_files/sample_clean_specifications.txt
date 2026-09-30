@@ -1,0 +1,7 @@
+DataGuard Project Technical Documentation
+Author: Red Xavier Rodrigo
+Course: Information Assurance and Security 2
+
+This document describes the high-level architecture of DataGuard DLP.
+The platform inspects outbound transfers and evaluates policies against enterprise data classifications.
+All standard business operations remain uninterrupted.
